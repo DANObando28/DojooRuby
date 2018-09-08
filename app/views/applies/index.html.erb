@@ -1,0 +1,26 @@
+<table
+    <tr>
+        <th>Id</th>
+        <th>Titulo</th>
+        <th>Nombre del solicitante</th>
+        <th>Solicitud</th>
+        <th>Edad</th>
+    </tr>
+
+    <% @applied.each do |a| %>
+    <tr>
+        <th><%=a.id%></th>
+        <th><%=a.tittle%></th>
+        <th><%=a.name%></th>
+        <th><%=a.body%></th>
+        <th><%=a.edad%></th>
+    </tr>
+    <%end%>   
+</table>
+
+
+
+<div>
+    <h1>datos del modelo:</h1>
+    <p><%= @applies.inspect %></p>
+</div>
